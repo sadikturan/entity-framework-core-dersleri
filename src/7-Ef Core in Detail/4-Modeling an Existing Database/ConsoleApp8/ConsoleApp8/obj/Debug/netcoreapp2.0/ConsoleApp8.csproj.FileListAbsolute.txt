@@ -1,0 +1,22 @@
+C:\Users\sadikturan\Documents\Visual Studio 2017\Projects\ConsoleApp8\ConsoleApp8\bin\Debug\netcoreapp2.0\ConsoleApp8.deps.json
+C:\Users\sadikturan\Documents\Visual Studio 2017\Projects\ConsoleApp8\ConsoleApp8\bin\Debug\netcoreapp2.0\ConsoleApp8.runtimeconfig.json
+C:\Users\sadikturan\Documents\Visual Studio 2017\Projects\ConsoleApp8\ConsoleApp8\bin\Debug\netcoreapp2.0\ConsoleApp8.runtimeconfig.dev.json
+C:\Users\sadikturan\Documents\Visual Studio 2017\Projects\ConsoleApp8\ConsoleApp8\bin\Debug\netcoreapp2.0\ConsoleApp8.dll
+C:\Users\sadikturan\Documents\Visual Studio 2017\Projects\ConsoleApp8\ConsoleApp8\bin\Debug\netcoreapp2.0\ConsoleApp8.pdb
+C:\Users\sadikturan\Documents\Visual Studio 2017\Projects\ConsoleApp8\ConsoleApp8\obj\Debug\netcoreapp2.0\ConsoleApp8.csprojAssemblyReference.cache
+C:\Users\sadikturan\Documents\Visual Studio 2017\Projects\ConsoleApp8\ConsoleApp8\obj\Debug\netcoreapp2.0\ConsoleApp8.csproj.CoreCompileInputs.cache
+C:\Users\sadikturan\Documents\Visual Studio 2017\Projects\ConsoleApp8\ConsoleApp8\obj\Debug\netcoreapp2.0\ConsoleApp8.AssemblyInfoInputs.cache
+C:\Users\sadikturan\Documents\Visual Studio 2017\Projects\ConsoleApp8\ConsoleApp8\obj\Debug\netcoreapp2.0\ConsoleApp8.AssemblyInfo.cs
+C:\Users\sadikturan\Documents\Visual Studio 2017\Projects\ConsoleApp8\ConsoleApp8\obj\Debug\netcoreapp2.0\ConsoleApp8.dll
+C:\Users\sadikturan\Documents\Visual Studio 2017\Projects\ConsoleApp8\ConsoleApp8\obj\Debug\netcoreapp2.0\ConsoleApp8.pdb
+D:\OneDrive\kurslar\Entity Framework Core 2\7-Ef Core in Detail\4-\ConsoleApp8\ConsoleApp8\bin\Debug\netcoreapp2.0\ConsoleApp8.deps.json
+D:\OneDrive\kurslar\Entity Framework Core 2\7-Ef Core in Detail\4-\ConsoleApp8\ConsoleApp8\bin\Debug\netcoreapp2.0\ConsoleApp8.runtimeconfig.json
+D:\OneDrive\kurslar\Entity Framework Core 2\7-Ef Core in Detail\4-\ConsoleApp8\ConsoleApp8\bin\Debug\netcoreapp2.0\ConsoleApp8.runtimeconfig.dev.json
+D:\OneDrive\kurslar\Entity Framework Core 2\7-Ef Core in Detail\4-\ConsoleApp8\ConsoleApp8\bin\Debug\netcoreapp2.0\ConsoleApp8.dll
+D:\OneDrive\kurslar\Entity Framework Core 2\7-Ef Core in Detail\4-\ConsoleApp8\ConsoleApp8\bin\Debug\netcoreapp2.0\ConsoleApp8.pdb
+D:\OneDrive\kurslar\Entity Framework Core 2\7-Ef Core in Detail\4-\ConsoleApp8\ConsoleApp8\obj\Debug\netcoreapp2.0\ConsoleApp8.csprojAssemblyReference.cache
+D:\OneDrive\kurslar\Entity Framework Core 2\7-Ef Core in Detail\4-\ConsoleApp8\ConsoleApp8\obj\Debug\netcoreapp2.0\ConsoleApp8.csproj.CoreCompileInputs.cache
+D:\OneDrive\kurslar\Entity Framework Core 2\7-Ef Core in Detail\4-\ConsoleApp8\ConsoleApp8\obj\Debug\netcoreapp2.0\ConsoleApp8.AssemblyInfoInputs.cache
+D:\OneDrive\kurslar\Entity Framework Core 2\7-Ef Core in Detail\4-\ConsoleApp8\ConsoleApp8\obj\Debug\netcoreapp2.0\ConsoleApp8.AssemblyInfo.cs
+D:\OneDrive\kurslar\Entity Framework Core 2\7-Ef Core in Detail\4-\ConsoleApp8\ConsoleApp8\obj\Debug\netcoreapp2.0\ConsoleApp8.dll
+D:\OneDrive\kurslar\Entity Framework Core 2\7-Ef Core in Detail\4-\ConsoleApp8\ConsoleApp8\obj\Debug\netcoreapp2.0\ConsoleApp8.pdb

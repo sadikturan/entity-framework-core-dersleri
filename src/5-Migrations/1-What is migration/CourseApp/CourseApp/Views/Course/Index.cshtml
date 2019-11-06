@@ -1,0 +1,75 @@
+﻿@model IEnumerable<CourseApp.Models.Course>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="m-4">
+
+    <div class="bg-success text-white p-4">
+        Course List
+    </div>
+
+    <div class="card my-2">
+        <div class="card-body">
+            <form method="get" id="filter">
+                <div class="form-group">                   
+                    <input name="name" class="form-control" placeholder="Course Name" value="@ViewBag.Name">                   
+                </div>
+                <div class="form-group">
+                    <input name="price" class="form-control" placeholder="Min Price" value="@ViewBag.Price">
+                </div>
+                <div class="custom-control custom-checkbox mb-2">
+                    <input name="isActive" type="checkbox" class="custom-control-input" id="isActive" checked="@ViewBag.isActive">
+                    <label class="custom-control-label" for="isActive">Active</label>
+                </div>
+                <button class="btn btn-primary">Filter</button>
+            </form>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-striped">
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>is Active</th>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Price</td>
+                    <td>@item.isActive</td>
+                    <td>
+                        <form asp-action="Delete" method="post">
+                            <a asp-action="Edit"
+                               asp-route-id="@item.Id"
+                               class="btn btn-primary btn-sm">
+                                Edit
+                            </a>
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+    <a asp-action="Create" class="btn btn-primary">
+        Create
+    </a>
+
+</div>
+

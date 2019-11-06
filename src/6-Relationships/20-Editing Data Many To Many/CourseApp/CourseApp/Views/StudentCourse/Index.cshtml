@@ -1,0 +1,92 @@
+﻿@model CourseApp.Models.StudentCourseModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="m-4">
+    <div class="bg-success text-white p-2">
+        Courses
+    </div>
+    <table class="table table-striped table-bordered table-sm">
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @if (Model.Courses?.Count() > 0)
+            {
+                @foreach (var course in Model.Courses)
+                {
+                    <tr>
+                        <td>@course.Name</td>
+                        <td>@course.Price</td>
+                        <td colspan="2">
+                            @(string.Join(", ", course.StudentCourses.Select(ps => ps.Student.Name)))
+                        </td>
+
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="3">No Courses</td>
+                </tr>
+            }
+
+
+        </tbody>
+
+    </table>
+
+    <hr />
+
+    <div class="bg-success text-white p-2">
+        Student
+    </div>
+    <table class="table table-striped table-bordered table-sm">
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @if (Model.Students?.Count() > 0)
+            {
+                @foreach (var student in Model.Students)
+                {
+                    <tr>
+                        <td>@student.Name</td>
+                        <td colspan="2">
+                            @(string.Join(", ", student.StudentCourses.Select(ps => ps.Course.Name)))
+                        </td>
+                        <td>
+                            <a asp-action="EditStudent" 
+                               asp-route-id="@student.Id"
+                               class="btn btn-sm btn-primary">Edit</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="3">No Students</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>

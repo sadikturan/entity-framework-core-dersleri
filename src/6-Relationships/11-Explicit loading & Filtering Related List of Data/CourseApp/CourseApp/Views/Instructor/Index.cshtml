@@ -1,0 +1,35 @@
+﻿@model IEnumerable<CourseApp.Models.Instructor>
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="m-4">
+
+    <div class="bg-success text-white p-4">
+        Instructors
+    </div>
+
+    @foreach (var item in Model)
+    {
+        <div class="bg-primary text-white p-2 mt-3">
+            @item.Name
+        </div>
+
+        @if (item.Courses != null)
+        {
+            <table class="table table-striped table-light">
+                @foreach (var course in item.Courses)
+                {
+                <tr>
+                    <td>@course.Name</td>
+                    <td>@course.isActive</td>
+                    <td>@course.Price</td>
+                </tr>
+                }
+            </table>
+        }
+
+    }
+
+</div>

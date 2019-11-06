@@ -1,0 +1,56 @@
+﻿@model CourseApp.Models.Student
+@{
+    ViewData["Title"] = Model == null ? "Create" : "Edit";
+}
+
+<div class="m-4">
+
+    <div class="bg-success text-white p-4">
+        Student Edit
+    </div>
+
+    <form asp-action="Edit" method="post">
+
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="Address.Id" />
+
+        <div class="row">
+            <div class="col-6">
+
+                <div class="bg-primary text-white p-2 mt-3">
+                    Student
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" />
+                </div>             
+            </div>
+            <div class="col-6">
+
+                <div class="bg-primary text-white p-2 mt-3">
+                    Student Address
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Address.City"></label>
+                    <input asp-for="Address.City" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Address.Country"></label>
+                    <input asp-for="Address.Country" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Address.Address"></label>
+                    <input asp-for="Address.Address" class="form-control" />
+                </div>
+
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+</div>
+

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<CourseApp.Models.Student>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="m-4">
+    <div class="bg-success text-white p-4">
+        Student List
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th colspan="3">Student Addres</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    @if (item.Address != null)
+                    {
+                        <td>@item.Address.City</td>
+                        <td>@item.Address.Country</td>
+                        <td>@item.Address.Address</td>
+                    }
+                    <td>
+                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">
+                            Edit
+                        </a>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+
+    </table>
+
+</div>

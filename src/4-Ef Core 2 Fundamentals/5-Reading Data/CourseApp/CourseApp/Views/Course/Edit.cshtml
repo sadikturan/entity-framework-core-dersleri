@@ -1,0 +1,34 @@
+﻿@model CourseApp.Models.Course
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="m-4">
+
+    <div class="bg-success text-white p-4">
+        Course Edit
+    </div>
+
+    <form asp-action="Edit" method="post">
+
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control" />
+        </div>
+
+        <div class="custom-control custom-checkbox mb-2">
+            <input asp-for="isActive" class="custom-control-input">
+            <label class="custom-control-label" asp-for="isActive"></label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+</div>

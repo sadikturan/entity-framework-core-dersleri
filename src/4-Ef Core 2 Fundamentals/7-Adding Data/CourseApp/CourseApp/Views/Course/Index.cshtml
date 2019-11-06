@@ -1,0 +1,56 @@
+﻿@model IEnumerable<CourseApp.Models.Course>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="m-4">
+
+    <div class="bg-success text-white p-4">
+        Course List
+    </div>
+
+    <table class="table table-bordered table-striped">
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>is Active</th>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Price</td>
+                    <td>@item.isActive</td>
+                    <td>
+                        <form asp-action="Delete" method="post">
+                            <a asp-action="Edit"
+                               asp-route-id="@item.Id"
+                               class="btn btn-primary btn-sm">
+                                Edit
+                            </a>
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+    <a asp-action="Create" class="btn btn-primary">
+        Create
+    </a>
+
+</div>
+
